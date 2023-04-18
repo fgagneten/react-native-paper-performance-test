@@ -14,25 +14,17 @@ const dimensions = Dimensions.get('window');
 const FirstScreen: FunctionComponent<null> = ({navigation}) => {
   return (
     <View style={{flex: 1, backgroundColor: '#380F3F'}}>
-      <Button
-        style={styles.button}
-        mode="contained"
-        testID="register_button"
-        color={Colors.blanco}
-        onPress={() => navigation.navigate('Second')}
-        key="create_account_button">
-        test Paper Button
+      <Button onPress={() => navigation.navigate('SecondScreen')}>
+        Navigate to Screen with Paper elements
       </Button>
 
-      <RNButton
-        onPress={() => navigation.navigate('Second')}
-        title="test RN Button"></RNButton>
-
-      <Button
-        mode="contained"
-        onPress={() => navigation.navigate('SecondScreenWithoutPaper')}>
-        test RN Button Go to screen without paper implementation
-      </Button>
+      <View style={{marginTop: 10}}>
+        <Button
+          mode="contained"
+          onPress={() => navigation.navigate('SecondScreenWithoutPaper')}>
+          Navigate to Screen WITHOUT Paper elements
+        </Button>
+      </View>
     </View>
   );
 };

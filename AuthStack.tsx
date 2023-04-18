@@ -16,7 +16,7 @@ export const AuthStack = function () {
         options={hideHeader}
       />
       <AuthStackNav.Screen
-        name="Second"
+        name="SecondScreen"
         component={SecondScreen}
         options={hideHeader}
       />

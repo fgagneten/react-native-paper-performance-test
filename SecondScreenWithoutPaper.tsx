@@ -1,9 +1,17 @@
 import React, {Component} from 'react';
-import {Keyboard, ScrollView, StatusBar, Text, View} from 'react-native';
+import {
+  Button,
+  Keyboard,
+  ScrollView,
+  StatusBar,
+  Text,
+  View,
+} from 'react-native';
 
 import PropTypes from 'prop-types';
 import {inject, observer} from 'mobx-react';
 import Colors from './Colors';
+import Card from './Card';
 
 export default class SecondScreenWithoutPaper extends React.PureComponent {
   static propTypes = {
@@ -22,27 +30,19 @@ export default class SecondScreenWithoutPaper extends React.PureComponent {
     return <View style={{}}></View>;
   }
 
-  renderItem() {
-    return (
-      <View style={{flex: 1, flexDirection: 'row', flexWrap: 'wrap'}}>
-        <Text>test</Text>
-      </View>
-    );
-  }
-
   renderLists() {
     return (
       <React.Fragment>
-        {this.renderItem()}
-        {this.renderItem()}
-        {this.renderItem()}
-        {this.renderItem()}
-        {this.renderItem()}
-        {this.renderItem()}
-        {this.renderItem()}
-        {this.renderItem()}
-        {this.renderItem()}
-        {this.renderItem()}
+        <Card />
+        <Button title="Button Example" onPress={() => console.log('test')} />
+        <Card />
+        <Button title="Button Example" onPress={() => console.log('test')} />
+        <Card />
+        <Button title="Button Example" onPress={() => console.log('test')} />
+        <Card />
+        <Button title="Button Example" onPress={() => console.log('test')} />
+        <Card />
+        <Button title="Button Example" onPress={() => console.log('test')} />
       </React.Fragment>
     );
   }

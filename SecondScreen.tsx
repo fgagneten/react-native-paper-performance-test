@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Keyboard, ScrollView, StatusBar, View} from 'react-native';
 
-import {Appbar, List} from 'react-native-paper';
+import {Appbar, List, Button} from 'react-native-paper';
 import PropTypes from 'prop-types';
 import {inject, observer} from 'mobx-react';
 
@@ -39,46 +39,41 @@ export default class SecondScreen extends React.PureComponent {
           description="Item description"
           left={props => <List.Icon {...props} icon="folder" />}
         />
+        <Button mode="contained" onPress={() => console.log('test')}>
+          Button Example
+        </Button>
         <List.Item
           title="First Item"
           description="Item description"
           left={props => <List.Icon {...props} icon="folder" />}
         />
+        <Button mode="contained" onPress={() => console.log('test')}>
+          Button Example
+        </Button>
         <List.Item
           title="First Item"
           description="Item description"
           left={props => <List.Icon {...props} icon="folder" />}
         />
+        <Button mode="contained" onPress={() => console.log('test')}>
+          Button Example
+        </Button>
         <List.Item
           title="First Item"
           description="Item description"
           left={props => <List.Icon {...props} icon="folder" />}
         />
+        <Button mode="contained" onPress={() => console.log('test')}>
+          Button Example
+        </Button>
         <List.Item
           title="First Item"
           description="Item description"
           left={props => <List.Icon {...props} icon="folder" />}
         />
-        <List.Item
-          title="First Item"
-          description="Item description"
-          left={props => <List.Icon {...props} icon="folder" />}
-        />
-        <List.Item
-          title="First Item"
-          description="Item description"
-          left={props => <List.Icon {...props} icon="folder" />}
-        />
-        <List.Item
-          title="First Item"
-          description="Item description"
-          left={props => <List.Icon {...props} icon="folder" />}
-        />
-        <List.Item
-          title="First Item"
-          description="Item description"
-          left={props => <List.Icon {...props} icon="folder" />}
-        />
+        <Button mode="contained" onPress={() => console.log('test')}>
+          Button Example
+        </Button>
       </React.Fragment>
     );
   }
